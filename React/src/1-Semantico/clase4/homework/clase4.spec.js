@@ -109,7 +109,7 @@ xdescribe("PUNTO 4", () => {
 			});
 		});
 	});
-	describe("Placeholder", () => {
+	xdescribe("Placeholder", () => {
 		it("El input Dirección debe tener como placeholder 'ej: Montevideo'", () => {
 			let placeHolder = screen.getByPlaceholderText("ej: Montevideo");
 			expect(placeHolder).toBeDefined();
@@ -123,7 +123,7 @@ xdescribe("PUNTO 4", () => {
 			expect(placeHolder).toBeDefined();
 		});
 	});
-	describe("Tipo de inputs", () => {
+	xdescribe("Tipo de inputs", () => {
 		it("Los inputs 'Número' y 'CP' deben ser de tipo 'number' ", () => {
 			let options = ["Número", "CP"];
 
@@ -138,7 +138,7 @@ xdescribe("PUNTO 4", () => {
 		});
 	});
 
-	describe("Agregando un id a cada input", () => {
+	xdescribe("Agregando un id a cada input", () => {
 		it("Los inputs 'Número' y 'cp' deben tener como id 'numero' y 'cp' respectivamente", () => {
 			expect(screen.getByLabelText(/número/i).id).toMatch("numero");
 			expect(screen.getByLabelText(/cp/i).id).toMatch("cp");
